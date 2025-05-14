@@ -82,8 +82,23 @@ function playRound(humanChoice, computerChoice){
 
     }
     
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
+function game(){
+    for(let i=1; i <= 5; i++){   
+        let humanSelection = getHumanChoice();
+        let computerSelection = getComputerChoice();
+        console.log(playRound(humanSelection, computerSelection));
+    }
+    let winner = "";
+    if (humanScore > computerScore){
+        winner = "you"
+    }
+    else{
+        winner = "computer"
+    }
+    let finalVerdict = `You had ${humanScore} out of the 5 rounds and 
+    \n Computer had ${computerScore} out of the 5 rounds.\n
+    The winner is ${winner}`;
+    console.log(finalVerdict);
+}
 
-console.log(playRound(humanSelection, computerSelection));
-
+game()
