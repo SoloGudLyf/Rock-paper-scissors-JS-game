@@ -76,6 +76,7 @@ function playRound(humanChoice, computerChoice) {
 function updateResults() {
   let scoreBoard = `Your score is ${humanScore} and computer's score is ${computerScore}`;
   roundScore.textContent = scoreBoard;
+  roundScore.classList.add("userChoice");
   displayResult.appendChild(roundScore);
   computerChoice = getComputerChoice();
 }
