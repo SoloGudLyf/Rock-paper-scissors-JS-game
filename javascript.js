@@ -43,7 +43,7 @@ let computerChoice = getComputerChoice();
 //compare the users choice with that of Computer and check to see the winner
 let roundOutcome = document.querySelector(".verdict");
 let displayResult = document.querySelector(".results");
-let roundScore = document.querySelector(".scoreBoard");
+let roundScore = document.createElement("p");
 playBtn.addEventListener("click", function () {
   let results = playRound(humanChoice, computerChoice);
   updateResults();
@@ -76,7 +76,7 @@ function playRound(humanChoice, computerChoice) {
 function updateResults() {
   let scoreBoard = `Your score is ${humanScore} and computer's score is ${computerScore}`;
   roundScore.textContent = scoreBoard;
-  roundScore.classList.add("userChoice");
+  roundScore.classList.add("scoreBoard");
   displayResult.appendChild(roundScore);
   computerChoice = getComputerChoice();
 }

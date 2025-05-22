@@ -15,10 +15,17 @@ h2 {
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-.btn button,
+/* rgb(166, 194, 231) */
+.btn button {
+  font-size: 1rem;
+  background-color: #a8d0db;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
 .play {
   font-size: 1rem;
-  background-color: rgb(166, 194, 231);
+  background-color: rgb(224, 235, 245);
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -30,5 +37,10 @@ section {
   text-align: center;
 }
 .userChoice {
+  padding: 1rem;
+}
+.scoreBoard {
+  background-color: rgb(224, 235, 245);
+  font-weight: bold;
   padding: 1rem;
 }
